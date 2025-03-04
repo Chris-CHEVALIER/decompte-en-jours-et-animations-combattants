@@ -1,0 +1,86 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  width: 20vw;
+}
+
+.background {
+  width: 100%;
+}
+
+#fighter-1,
+#fighter-2 {
+  width: 20vw;
+}
+
+.fighters {
+  display: flex;
+  justify-content: space-between;
+}
+
+@keyframes fromLeftToCenter {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(30vw);
+  }
+}
+
+@keyframes fromRightToCenter {
+  from {
+    transform: translateX(200vw);
+  }
+  to {
+    transform: translateX(30vw);
+  }
+}
+
+@keyframes fromCenterToLeft {
+  from {
+    transform: translateX(30vw);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}
+
+@keyframes fromCenterToRight {
+  from {
+    transform: translateX(30vw);
+  }
+  to {
+    transform: translateX(200vw);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .fighters {
+    display: inline;
+  }
+
+  .from-left-to-center {
+    animation: fromLeftToCenter 3s forwards;
+  }
+
+  .from-right-to-center {
+    animation: fromRightToCenter 3s forwards;
+  }
+
+  .from-center-to-left {
+    animation: fromCenterToLeft 3s forwards;
+  }
+
+  .from-center-to-right {
+    animation: fromCenterToRight 3s forwards;
+  }
+}
