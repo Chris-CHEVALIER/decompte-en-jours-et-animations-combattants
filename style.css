@@ -1,6 +1,7 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .flex-container {
@@ -20,11 +21,6 @@
 #fighter-1,
 #fighter-2 {
   width: 20vw;
-}
-
-.fighters {
-  display: flex;
-  justify-content: space-between;
 }
 
 @keyframes fromLeftToCenter {
